@@ -2,7 +2,6 @@
 @section('page-title', 'Film')
 @section('content')
 <div class="container my-3">
-
     <div class="row justify-content-around flex-wrap">
 
         @foreach ($movies as $item)
@@ -11,7 +10,12 @@
               <h5 class="card-title">{{$item->title}}</h5>
               <h6 class="card-subtitle mb-2 text-muted">{{$item->original_title}}</h6>
               <p class="card-text">{{$item->nationality}}</p>
-              <small class="card-text">{{$item->date}}</small>          
+              <small class="card-text">{{$item->date}}</small>
+              <div>
+                <a href="/" class="card-link">Card link</a>
+                <a href="/otherpage" class="card-link">Another link</a>
+              </div>
+              
             </div>
         </div>
         @endforeach

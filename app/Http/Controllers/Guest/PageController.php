@@ -23,6 +23,6 @@ class PageController extends Controller
         //recupero i dati dal database
         $movies = Movie::all();
 
-        return view('welcome',compact('movies','links'));
+        return view('other',compact('movies','links'));
     }
 }
