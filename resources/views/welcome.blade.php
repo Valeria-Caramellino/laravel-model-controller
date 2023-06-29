@@ -11,6 +11,7 @@
               <h6 class="card-subtitle mb-2 text-muted">{{$item->original_title}}</h6>
               <p class="card-text">{{$item->nationality}}</p>
               <small class="card-text">{{$item->date}}</small>
+              <p>Voto: <small class="card-text">{{ ceil($item->vote) }}</small> </p>
               <div>
                 <a href="/" class="card-link">Card link</a>
                 <a href="/otherpage" class="card-link">Another link</a>
